@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>行高</title>
+    <style>
+      body {
+        font-size: 20px;
+      }
+      .con p {
+        line-height: 2;
+      }
+      .con2 {
+        width: 900px;
+        height: 200px;
+        font-size: 15px;
+        background-color: pink;
+      }
+      .con2 p {
+        line-height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="con">
+      <!-- 行高line-height
+        控制行的高度,不是行间距,行高为行间距+字号的值 ;
+        行高概念: 控制两行文字之间基线的距离 ;
+        值: 常用的是相对值,相对字号的大小;或者可以用百分比,也是相对于字号的比例;固定数值的行高很少使用,不好做适配;normal用来恢复浏览器的默认行高-->
+      <p>
+        紫玉就是紫水晶，一般用来做附身符和辟邪之物，很少有人用来做匣子，这个匣子，看样子是用整块的紫玉挖出来，十分罕见，紫玉不善琢磨，所以这盒子上面什么图案都没有，只在合盖处镶了一道金边，看它放的位置，应该是当这尸体的枕头用的。
+      </p>
+      <div class="con2">
+        <!-- 使用line-height做文字垂直居中效果 -->
+        <p>
+            紫玉就是紫水晶
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

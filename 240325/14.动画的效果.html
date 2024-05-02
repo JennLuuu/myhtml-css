@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>动画的效果</title>
+        <style>
+            @keyframes change {
+                from{
+                    width: 100px;
+                    background-color: beige;
+                }
+                to{
+                    width: 300px;
+                    height: 500px;
+                    background-color: aquamarine;
+                }
+            }
+            .box {
+                width: 200px;
+                height: 200px;
+                background-color: blueviolet;
+
+                animation: change 5s linear 2s;
+            }
+            .box2 {
+                width: 300px;
+                height: 200px;
+                background-color: rgb(226, 43, 125);
+
+                animation: change 5s linear 2s;
+                /* 动画开始前直接让当前元素放弃默认样式,选择动画的from位置的样式 */
+                animation-fill-mode: backwards;
+            }
+            .box3 {
+                width: 300px;
+                height: 200px;
+                background-color: rgb(226, 43, 125);
+
+                animation: change 5s linear 2s;
+                /* 动画结束后直接让当前元素保留关键帧中to的样式*/
+                animation-fill-mode: forwards;
+            }
+            .box4 {
+                width: 300px;
+                height: 200px;
+                background-color: rgb(74, 122, 107);
+
+                animation: change 5s linear 2s;
+                /* 动画开始前直接使用from的样式,结束后保留to的样式*/
+                animation-fill-mode: both
+                ;
+            }
+            .box5 {
+                width: 30px;
+                height: 290px;
+                background-color: rgb(92, 122, 74);
+
+                animation: change 5s linear 2s;
+                /* 动画开始前直接使用from的样式,结束后保留to的样式*/
+                animation-fill-mode: both
+                ;
+            }
+            /* 盒子悬浮时动画暂停 */
+            .box5:hover {
+                animation-play-state: paused;
+            }
+            .box6 {
+                width: 100px;
+                height: 30px;
+                background-color: rgb(118, 122, 74);
+
+                animation: change 5s linear 2s;
+                /* 动画开始前直接使用from的样式,结束后保留to的样式*/
+                animation-fill-mode: both
+                ;
+                animation-play-state: paused;
+            }
+            /* 盒子悬浮的时候动画开始运行:先给盒子动画暂停掉,hover的时候再running */
+            .box6:hover {
+                animation-play-state:running;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <!-- <div class="box">box</div>
+            <div class="box2">box2</div>
+            <div class="box3">box3</div>
+            <div class="box4">box4</div> -->
+            <div class="box5">box5</div>
+            <div class="box6">box6</div>
+        </div>
+    </body>
+</html>

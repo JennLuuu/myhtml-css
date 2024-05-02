@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>正方体2</title>
+    <style>
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg) rotateX(0deg) rotateY(0deg);
+        }
+        to {
+          transform: rotate(360deg) rotateX(360deg) rotateY(360deg);
+        }
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      ul {
+        width: 200px;
+        height: 200px;
+        margin: 250px auto;
+
+        position: relative;
+        transform-style: preserve-3d;
+        /* perspective: 500px; */
+
+        animation: rotate 2s linear infinite;
+      }
+      ul li {
+        width: 200px;
+        height: 200px;
+        /* line-height: 200px; */
+        /* text-align: center; */
+      }
+      ul li:nth-child(1) {
+        background-color: rgba(237, 110, 110, 0.654);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      ul:hover li:nth-child(1) {
+        transform: translateZ(200px);
+        transition: all 1s 0s linear;
+      }
+      ul li:nth-child(2) {
+        background-color: rgba(237, 186, 110, 0.654);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      ul:hover li:nth-child(2) {
+        transform: rotateX(180deg);
+        transition: all 1s 1s linear;
+      }
+      ul li:nth-child(3) {
+        background-color: rgba(231, 237, 110, 0.654);
+        position: absolute;
+        top: -200px;
+        left: 0;
+
+        transform-origin: 0 bottom;
+      }
+      ul:hover li:nth-child(3) {
+        transform: rotateX(-90deg);
+        transition: all 1s 2s linear;
+      }
+      ul li:nth-child(4) {
+        background-color: rgba(110, 233, 237, 0.654);
+        position: absolute;
+        bottom: -200px;
+        left: 0;
+
+        transform-origin: 0 top;
+      }
+      ul:hover li:nth-child(4) {
+        transform: rotateX(90deg);
+        transition: all 1s 3s linear;
+      }
+      ul li:nth-child(5) {
+        background-color: rgba(123, 110, 237, 0.654);
+        position: absolute;
+        top: 0;
+        left: -200px;
+
+        transform-origin: right 0;
+      }
+      ul:hover li:nth-child(5) {
+        transform: rotateY(90deg);
+        transition: all 1s 4s linear;
+      }
+      ul li:nth-child(6) {
+        background-color: rgba(237, 110, 110, 0.654);
+        position: absolute;
+        top: 0;
+        right: -200px;
+        transform-origin: left 0;
+      }
+      ul:hover li:nth-child(6) {
+        transform: rotateY(-90deg);
+        transition: all 1s 5s linear;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+    </ul>
+  </body>
+</html>

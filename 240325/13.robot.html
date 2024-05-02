@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>robot运动</title>
+        <style>
+            @keyframes robot {
+                from{
+                    transform: rotateY(180deg) translateX(0);
+                }
+                49.9999% {
+                    transform: rotateY(180deg) translateX(-800px);
+                }
+                50% {
+                    transform: rotateY(0deg) translateX(800px);
+                }
+                to {
+                    transform: rotateY(0deg) translateX(0);
+                }
+            }
+            img {
+               transform: rotateY(180deg); 
+
+               animation: robot 4s linear infinite;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img src="./images/robot.png" alt="">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<!--
+ * @Author: JennLuuu 1129694837@qq.com
+ * @Date: 2024-03-24 23:08:57
+ * @LastEditors: JennLuuu 1129694837@qq.com
+ * @LastEditTime: 2024-03-25 03:53:40
+ * @FilePath: \MyCode\240323\11.渐变.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>渐变</title>
+    <style>
+      .box p {
+        width: 200px;
+        height: 200px;
+        border: 5px dotted salmon;
+        float: left;
+        margin-right: 30px;
+      }
+      /* 线性渐变 */
+      .box p:nth-child(1) {
+        background: linear-gradient(
+          rgb(206, 102, 102),
+          rgb(38, 224, 38) 20%,
+          rgb(108, 108, 229)
+        );
+      }
+      .box p:nth-child(2) {
+        background: linear-gradient(
+          45deg,
+          rgb(206, 102, 102),
+          rgb(38, 224, 38) 40%,
+          rgb(108, 108, 229)
+        );
+      }
+      .box p:nth-child(3) {
+        background: linear-gradient(
+          to right,
+          rgb(206, 102, 102),
+          rgb(38, 224, 38) 20%,
+          rgb(108, 108, 229)
+        );
+      }
+      .box p:nth-child(4) {
+        background-image: linear-gradient(
+          25deg,
+          #eb6599,
+          #d68da1,
+          #bbada8,
+          #96c9b0
+        );
+      }
+      .box p:nth-child(5) {
+        background-image: radial-gradient(
+          #eb6599,
+          #d68da1 10%,
+          #bbada8 30%,
+          #96c9b0 60%
+        );
+      }
+      .box p:nth-child(6) {
+        background-image: radial-gradient(
+          at top right,
+          #e15860,
+          #ed8e8d,
+          #f2bfbd,
+          #f0f0f0
+        );
+      }
+      .box p:nth-child(7) {
+        background-image: radial-gradient(
+          at left bottom,
+          #440e0e,
+          #744133,
+          #a5765c,
+          #d8ae89
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <!-- 线性渐变 -->
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+
+      <!-- 径向渐变 -->
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+  </body>
+</html>

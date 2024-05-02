@@ -1,0 +1,78 @@
+<!--
+ * @Author: JennLuuu 1129694837@qq.com
+ * @Date: 2024-03-25 17:58:47
+ * @LastEditors: JennLuuu 1129694837@qq.com
+ * @LastEditTime: 2024-03-25 18:09:39
+ * @FilePath: \MyCode\240325\03.幽灵按钮2.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>幽灵按钮方法二</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .outer {
+        width: 300px;
+        height: 150px;
+        background-color: #9b8098;
+        margin: 0 auto;
+        position: relative;
+
+        overflow: hidden;
+      }
+      .outer:hover {
+        background-color: #ddd;
+        
+      }
+
+      h1 {
+        font-size: 50px;
+        color: #ddd;
+        text-align: center;
+        line-height: 150px;
+      }
+      h1:hover {
+        color: #9b8098;
+      }
+      .left {
+        /* width: 250px; */
+        height: 10px;
+        background-color: #ddd;
+        position: absolute;
+        top: 10px;
+        left: 0;
+      }
+      .right {
+        width: 0px;
+        height: 10px;
+        background-color: #ddd;
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+
+        
+      }
+      .left:hover,.right:hover {
+        transform: translateX(250px);
+        background-color: #9b8098;
+
+        transition: all 1s linear;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <h1>HTML5</h1>
+      <p class="left"></p>
+      <p class="right"></p>
+    </div>
+  </body>
+</html>

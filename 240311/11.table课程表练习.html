@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>table课程表练习</title>
+  </head>
+  <body>
+    <div>
+      <!-- 课程表表单 -->
+      <table
+        border="1"
+        style="
+          border-collapse: collapse;
+          width: 900px;
+          height: 600px;
+          text-align: center;
+        "
+      >
+        <caption>
+          <strong>尚硅谷教育作息时间安排表</strong>
+        </caption>
+        <!-- 表头 -->
+        <thead style="background-color: lightgray">
+          <tr>
+            <th>类别</th>
+            <th>星期一</th>
+            <th>星期二</th>
+            <th>星期三</th>
+            <th>星期四[全天自习]</th>
+            <th>星期五</th>
+            <th>星期六</th>
+          </tr>
+        </thead>
+        <!-- 表单主体 -->
+        <tbody>
+          <!-- 早自习 -->
+          <tr>
+            <td style="background-color: lightgray">早自习</td>
+            <td colspan="3">08:25-9:00</td>
+            <td>无</td>
+            <td colspan="2">08:25-9:00</td>
+          </tr>
+          <!-- 上午 -->
+          <tr>
+            <td rowspan="2" style="background-color: lightgray">上午</td>
+            <td rowspan="2" colspan="3">09:00-12:00</td>
+            <td>第一节自习 09:25-10:30</td>
+            <td rowspan="2" colspan="2">09:00-12:00</td>
+          </tr>
+          <tr>
+            <td>第二节自习 10:45-12:00</td>
+          </tr>
+          <!-- 午休 -->
+          <tr>
+            <td style="background-color: lightgray">午休</td>
+            <td colspan="3">12:00-13:45</td>
+            <td>12:00-13:45</td>
+            <td colspan="2">12:00-13:45</td>
+          </tr>
+          <!-- 分享时间 -->
+          <tr>
+            <td style="background-color: lightgray">分享时间</td>
+            <td colspan="6">13:45-14:00</td>
+          </tr>
+          <!-- 下午 -->
+          <tr>
+            <td rowspan="3" style="background-color: lightgray">下午</td>
+            <td rowspan="3" colspan="3">14:00-17:00</td>
+            <td>第一节自习 13:45-15:00</td>
+            <td rowspan="3" colspan="2">14:00-17:00</td>
+          </tr>
+          <tr>
+            <td>第二节自习 15:15-16:15</td>
+          </tr>
+          <tr>
+            <td>第三节自习 16:30-17:30</td>
+          </tr>
+          <!-- 休息 -->
+          <tr>
+            <td style="background-color: lightgray">休息</td>
+            <td colspan="3">17:00-18:00</td>
+            <td rowspan="4">无</td>
+            <td colspan="2">17:00-18:00</td>
+          </tr>
+          <!-- 晚自习 -->
+          <tr>
+            <td rowspan="3" style="background-color: lightgray">晚自习</td>
+            <td colspan="3">第一节晚自习 18:00-19:00</td>
+            <td colspan="2">第一节晚自习 18:00-19:00</td>
+          </tr>
+          <tr>
+            <td colspan="3">第二节晚自习 19:15-20:15</td>
+            <td colspan="2">第二节晚自习 19:15-20:15</td>
+          </tr>
+          <tr>
+            <td colspan="3">第三节晚自习 20:30-21:30</td>
+            <td colspan="2">第三节晚自习 20:30-21:30</td>
+          </tr>
+          <!-- 打卡安排 -->
+          <tr>
+            <td style="background-color: lightgray">打卡安排</td>
+            <td colspan="3">
+              08:25之前<br />
+              13:45之前<br />
+              18:00之前<br />
+              21:30以后<br />
+              (打卡4次)
+            </td>
+            <td>
+              9:25之前<br />
+              13:45之前<br />
+              17:30以后<br />
+              (打卡3次)
+            </td>
+            <td>
+              08:25之前<br />
+              13:45之前<br />
+              18:00之前<br />
+              21:30以后<br />
+              (打卡4次)
+            </td>
+            <td>
+              9:25之前<br />
+              13:45之前<br />
+              17:30以后<br />
+              (打卡3次)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

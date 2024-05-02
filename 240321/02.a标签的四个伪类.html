@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>a标签的四个伪类</title>
+        <link rel="stylesheet" href="../reset.css">
+        <style>
+            a {
+                color: #666262;
+            }
+            .one:link {
+                color: blue;
+            }
+            .one:visited {
+                color: yellow;
+            }
+            .one:hover {
+                color: green ;
+            }
+            .one:active {
+                color: palevioletred;
+            }
+            .two:visited {
+                color: yellow;
+            }
+            .three:hover {
+                color: green ;
+            }
+            .four:active {
+                color: palevioletred;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="box">
+                <a class="one" href="javascript:;">百度一下,就不告诉你</a>
+                <br>
+                <a class="two" href="javascript:;">百度一下,就不告诉你</a>
+                <br>
+                <a class="three" href="javascript:;">百度一下,就不告诉你</a>
+                <br>
+                <a class="four" href="javascript:;">百度一下,就不告诉你</a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>交集选择器</title>
+        <style>
+            /* 
+            找.page的后代中所有的p,并且p有active的类名的标签
+            */
+            .page p.active {
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="page">
+                <p>test1</p>
+                <p>test2</p>
+                <p>test3</p>
+                <p class="active">test4</p>
+                <p>test5</p>
+                <p>test6</p>
+                <p>test7</p>
+                <p class="active">test8</p>
+                <p>test9</p>
+            </div>
+        </div>
+    </body>
+</html>

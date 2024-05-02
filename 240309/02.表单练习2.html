@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>表单练习2</title>
+  </head>
+  <body>
+    <div>
+      <!-- 表单部分 -->
+      <form action="">
+        <!-- 用户名 -->
+        <p>
+          <span>请输入用户名:</span>
+          <input type="text" value="laoliu" />
+        </p>
+        <!-- 密码 -->
+        <p>
+          <span>请输入密码</span>
+          <input type="password" value="123" />
+        </p>
+        <!-- 性别 -->
+        <p>
+          <span>请选择你的性别</span>
+          <input type="radio" name="gender" value = "男"/><span>男</span>
+          <input type="radio" name="gender" value = "女"/><span>女</span>
+          <input type="radio" name="gender" value = "保密"/><span>保密</span>
+        </p>
+        <!-- 家乡 -->
+        <p>
+          <span>请选择你的家乡</span>
+          <input type="radio" name="hometown" value="北京"/><span>北京</span>
+          <input type="radio" name="hometown" value="大连"/><span>大连</span>
+          <input type="radio" name="hometown" value="深圳"/><span>深圳</span>
+          <input type="radio" name="hometown" value="保定"/><span>保定</span>
+        </p>
+        <!-- 城市 -->
+        <p>
+          <span>请选择你喜欢的城市</span>
+          <input type="checkbox" name="city" value="北京"/><span>北京</span>
+          <input type="checkbox" name="city" value="北京"/><span>北京</span>
+          <input type="checkbox" name="city" value="北京"/><span>北京</span>
+          <input type="checkbox" name="city" value="北京"/><span>北京</span>
+        </p>
+        <!-- 上传图片 -->
+        <p>
+          <span>请上传图片</span>
+          <input type="file" />
+        </p>
+        <!-- 喜欢的食物 -->
+        <p>
+          <span>请选择你喜欢的食物</span>
+          <select name="food" id="">
+            <option value="榴莲">榴莲</option>
+            <option value="臭豆腐">臭豆腐</option>
+            <option value="烤冷面">烤冷面</option>
+            <option value="热干面">热干面</option>
+          </select>
+        </p>
+        <!-- 留言 -->
+        <p>
+          <span>请输入你的留言</span>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </p>
+        <!-- 按钮 -->
+        <p>
+          <button>点我</button>
+          <button>重置</button>
+          <button>提交</button>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

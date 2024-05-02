@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>作业2</title>
+        <style>
+            
+            .box {
+                /* 限制总容器宽度,否则加边框的时候右边框就会随页面的宽度走,不固定 */
+                width: 1000px;
+                border: 4px solid rgb(161, 161, 165);
+            }
+            /* 头部父元素清浮动 */
+            .clear_float::after{
+                content: "";
+                display:block;
+                clear: both;
+                height: 0;
+            }
+            .box1,.box2,.box3,.box4,.box5 {
+                height: 200px;
+                width: 200px;
+                float: left;
+                font-size: 30px;
+                text-align: center;
+            }
+            .box1 {
+                background-color: lightgray;
+            }
+            .box2 {
+                background-color: gray;
+            }
+            .box3 {
+                background-color: yellow;
+            }
+            .box4 {
+                background-color: green;
+            }
+            .box5 {
+                background-color: rgb(68, 223, 223);
+            }
+            .content_left {
+                width:600px;
+                font-size: 30px;
+                text-align: center;
+                float: left;
+            }
+            .content_left_top_left {
+                background-color: rgb(144, 230, 90);
+                height:300px;
+                width: 300px;
+                float:left;
+            }
+            .content_left_top_right {
+                background-color: rgb(160, 70, 170);
+                height:300px;
+                width: 300px;
+                float:left;
+            }
+            .content_left_bottom {
+                width: 600px;
+                height: 100px;
+                background-color: rgb(23, 123, 91);
+            }
+
+            .content_right {
+                font-size: 30px;
+                text-align: center;
+                float: left;
+            }
+            .content_right_top {
+                width: 400px;
+                height: 250px;
+                background-color: rgb(91, 107, 113);
+            }
+            .content_right_bottom {
+                width: 400px;
+                height: 150px;
+                background-color: rgb(81, 187, 161);
+            }
+            .foot {
+                /* width: 1000px;  */
+                height: 80px;
+                background-color: rgb(17, 52, 86);
+                font-size: 30px;
+                color: #fff;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 总容器 -->
+        <div class="box">
+            <!-- 上部 -->
+            <div class="top clear_float">
+                <div class="box1">200*200</div>
+                <div class="box2">200*200</div>
+                <div class="box3">200*200</div>
+                <div class="box4">200*200</div>
+                <div class="box5">200*200</div>
+            </div>
+            <!-- 中部 -->
+            <div class="content clear_float">
+                <!-- 左边 -->
+                <div class="content_left">
+                    <!-- 上边 -->
+                    <div class="content_left_top clear_float">
+                        <div class="content_left_top_left">300*300</div>
+                        <div class="content_left_top_right">300*300</div>
+                    </div>
+                    <!-- 下边 -->
+                    <div class="content_left_bottom">600*100</div>
+                </div>
+                <!-- 右边 -->
+                <div class="content_right">
+                    <!-- 上边 -->
+                    <div class="content_right_top">400*250</div>
+                    <!-- 下边 -->
+                    <div class="content_right_bottom">400*150</div>
+                </div>
+            </div>
+            <!-- 下部 -->
+            <div class="foot">
+                1000*80
+            </div>
+        </div>
+    </body>
+</html>

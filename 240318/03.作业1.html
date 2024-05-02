@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>作业1</title>
+        <style>
+            .outer {
+                width: 2000px;
+            }
+            .head {
+                height:95px;
+                background-color: aqua;
+                margin-bottom: 38px;
+            }
+
+            .center {
+                width: 2000px;
+                height: 582px;
+                margin: 0 auto;
+                margin-bottom: 38px;
+            }
+
+            .center::after {
+                content: "";
+                display: block;
+                clear: both;
+                height: 0;
+            }
+
+            .center_left {
+                width: 385px;
+                height: 582px;
+                background-color: antiquewhite;
+                float: left;
+                margin-right: 38px;
+            }
+
+            .center_right {
+                width: 1510px;
+                height: 582px;
+                background-color: rgb(21, 153, 76);
+                float: left;
+            }
+
+            .foot {
+                height: 154px;
+                background-color: rgb(255, 0, 0);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <!-- 头部 -->
+            <div class="head"></div>
+            <!-- 中部 -->
+            <div class="center">
+                <!-- 左边 -->
+                <div class="center_left"></div>
+                <!-- 右边 -->
+                <div class="center_right"></div>
+            </div>
+            <!-- 底部 -->
+            <div class="foot"></div>
+        </div>
+    </body>
+</html>

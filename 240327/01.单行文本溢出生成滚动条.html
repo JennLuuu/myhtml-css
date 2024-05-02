@@ -1,0 +1,37 @@
+<!--
+ * @Author: JennLuuu 1129694837@qq.com
+ * @Date: 2024-03-27 16:34:58
+ * @LastEditors: JennLuuu 1129694837@qq.com
+ * @LastEditTime: 2024-03-28 16:09:47
+ * @FilePath: \MyCode\240327\01.单行文本溢出生成滚动条.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>单行文本溢出生成滚动条</title>
+        <style>
+            .outer p {
+                width: 285px;
+                height: 500px;
+                border: 1px solid #000;
+                font-size: 30px;
+
+                /* step1:禁止文本换行 */
+                white-space: nowrap;
+                /* step2:超出隐藏 */
+                overflow: hidden;
+                /* step3:超出隐藏后生成省略号 */
+                text-overflow: ellipsis;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <p>今天他和他的狗子一起去爬山去了,结果遇到了下雨</p>
+        </div>
+    </body>
+</html>

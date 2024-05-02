@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>05.等高布局</title>
+        <link rel="stylesheet" href="../reset.css">
+        <style>
+            .clearFix::after{
+            content: "";
+            display:block;
+            clear: both;
+            height: 0;
+            }
+            .outer {
+                border: 2px solid black;
+                overflow: hidden;
+            }
+            .left {
+                width: 300px;
+                float: left;
+                background-color: palevioletred;
+                padding-bottom: 11111px;
+                margin-bottom: -11111px;
+            }
+            .center {
+                width: 400px;
+                background-color: sandybrown;
+                float: left;
+                padding-bottom: 11111px;
+                margin-bottom: -11111px;
+            }
+            .right {
+                width: 300px;
+                background-color: skyblue;
+                float: left;
+                padding-bottom: 11111px;
+                margin-bottom: -11111px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer clearFix">
+            <div class="left">
+                <ul>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                </ul>
+            </div>
+            <div class="center">
+                <ul>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                    <li>haiaiiaajk</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

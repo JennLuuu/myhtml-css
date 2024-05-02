@@ -1,0 +1,56 @@
+<!--
+ * @Author: JennLuuu 1129694837@qq.com
+ * @Date: 2024-03-18 08:59:22
+ * @LastEditors: JennLuuu 1129694837@qq.com
+ * @LastEditTime: 2024-03-18 08:59:31
+ * @FilePath: \MyCode\240318\01.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>负margin练习1</title>
+    <style>
+      .outer{
+        /*width: 1000px;*/
+        height: 250px;
+        border: 1px solid #000;
+        float: left;
+      }
+      .inner{
+        width: 1068px;
+        overflow: hidden;
+        margin-right: -68px;
+      }
+      .outer .inner div{
+        width: 199px;
+        height: 200px;
+        background-color: pink;
+        float: left;
+        margin-right: 68px;
+      }
+
+      /*方法1  最后一个设置为0 覆盖*/
+      /*.outer .active{
+      margin-right: 0;
+      }*/
+
+
+      /*方法二： 直接使用选择器选择前3个*/
+      /* .outer div:nth-child(-n+3){
+      margin-right: 68px;
+      }*/
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="inner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="active"></div>
+      </div>
+    </div>
+  </body>
+</html>Copy to clipboardErrorCopied

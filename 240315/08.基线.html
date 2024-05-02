@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>基线练习</title>
+    <style>
+      .outer {
+        font-size: 20px;
+        background-color: antiquewhite;
+      }
+      .outer .con1 {
+        background-color: aquamarine;
+        width: 90px;
+        height: 90px;
+        display: inline-block;
+        vertical-align: bottom;
+      }
+      .outer .con2 {
+        background-color: rgb(163, 101, 150);
+        width: 120px;
+        height: 90px;
+        display: inline-block;
+        vertical-align: bottom;
+      }
+      .outer .con3 {
+        background-color: rgb(60, 72, 62);
+        width: 200px;
+        height: 120px;
+        display: inline-block;
+        vertical-align: bottom;
+      }
+      .outer input {
+        font-size: 40px;
+        width: 150px;
+        height: 1.5em;
+        vertical-align: bottom;
+      }
+      .outer img {
+        width: 100px;
+        height: 100px;
+        vertical-align: bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 基线
+    是英文四线格的上数第三条线,平时计算机在确定基线,是以x的下边沿定为基线,上边沿定为中线;
+    在对行内处于水平位置的行内元素进行垂直位置调整的时候,就通过调整元素与基线的相对位置来改变的(vertical-align) 
+    vertical-align可以是位置的词,也可以是一个带单位的值,用来相对基线做微调,单位是px
+-->
+    <div class="outer">
+      <div class="con1"></div>
+      <div class="con2">还是搞i和你哦人</div>
+      <div class="con3">
+        <span>看风景呢我</span>
+        <span>女色OK减肥减肥几点几分</span>
+      </div>
+      <input type="text" />
+      <img src="./images/gugong1.jpg" alt="" />
+      x
+    </div>
+  </body>
+</html>

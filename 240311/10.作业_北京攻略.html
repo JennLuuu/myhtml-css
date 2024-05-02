@@ -1,0 +1,164 @@
+<!--
+ * @Author: JennLuuu 1129694837@qq.com
+ * @Date: 2024-03-11 18:12:20
+ * @LastEditors: JennLuuu 1129694837@qq.com
+ * @LastEditTime: 2024-03-12 09:13:54
+ * @FilePath: \MyCode\240311\10.作业_北京攻略.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>作业_北京攻略</title>
+  </head>
+  <body>
+    <div>
+      <!-- 北京旅游攻略 -->
+      <div>
+        <h1>北京旅游景点攻略</h1>
+        <ol>
+          <li>
+            <h2>故宫</h2>
+            <div>
+              <img
+                src="./images/gugong1.jpg"
+                alt="故宫图示"
+                width="100px"
+                height="100px"
+              />
+              <img
+                src="./images/gugong2.jpg"
+                alt="故宫图示"
+                width="100px"
+                height="100px"
+              />
+              <img
+                src="./images/gugong3.jpg"
+                alt="故宫图示"
+                width="100px"
+                height="100px"
+              />
+            </div>
+            <!-- <p>
+              <img
+                src="./images/gugong1.jpg"
+                alt="故宫图示"
+                width="100px"
+                height="100px"
+              />
+              <img
+                src="./images/gugong2.jpg"
+                alt="故宫图示"
+                width="100px"
+                height="100px"
+              />
+              <img
+                src="./images/gugong3.jpg"
+                alt="故宫图示"
+                width="100px"
+                height="100px"
+              />
+            </p> -->
+            <p><strong>北京故宫</strong></p>
+            <!-- <h3>北京故宫</h3> -->
+            <p>
+              旧称为紫禁城，是中国明、清两代24为皇帝的皇宫。它是汉族宫殿建筑之精华，无与伦比的古代建筑杰作，也是世界上现存规模最大、保存最为完整的木材结构的古建筑群
+            </p>
+            <p>地址: <i>北京市东城区景山前街4号</i></p>
+          </li>
+          <li>
+            <h2>颐和园</h2>
+            <div>
+              <img
+                src="./images/yiheyuan.jpg"
+                alt="颐和园图示"
+                width="100px"
+                height="100px"
+              />
+              <img
+                src="./images/yiheyuan2.jpg"
+                alt="颐和园图示"
+                width="100px"
+                height="100px"
+              />
+            </div>
+            <p><strong>颐和园</strong></p>
+            <p>
+              北京市古代皇家园林，前身为清漪园，坐落在北京西郊，距城区十五公里，占地约二百九十公顷，与圆明园此邻。它是以昆明湖、万寿山为基址，以杭州西湖为蓝本，汲取江南园林的设计手法而建成的一座大型山水园林，也是保存最完整的一座皇家行宫御苑，被誉为“皇家园林博物馆”，也是国家重点旅游景点。
+            </p>
+            <p>地址: <i>北京市海淀区建言门路19号</i></p>
+          </li>
+        </ol>
+      </div>
+
+
+      <div>
+        <form action="###" style="border: 1px solid red">
+          <!-- 选择你喜欢的景点 -->
+          <h3>选择你喜欢的景点</h3>
+          <div>
+            <label>
+              <input type="checkbox" name="Attractions" value="故宫" />故宫
+            </label>
+            <label>
+              <input type="checkbox" name="Attractions" value="圆明园" />圆明园
+            </label>
+            <label>
+              <input type="checkbox" name="Attractions" value="颐和园" />颐和园
+            </label>
+            <label>
+              <input type="checkbox" name="Attractions" value="八大处" />八大处
+            </label>
+            <label>
+              <input type="checkbox" name="Attractions" value="后海" />后海
+            </label>
+            <label>
+              <input type="checkbox" name="Attractions" value="天坛" />天坛
+            </label>
+            <label>
+              <input type="checkbox" name="Attractions" value="鸟巢" />鸟巢
+            </label>
+            <label>
+              <input type="checkbox" name="Attractions" value="水立方" />水立方
+            </label>
+          </div>
+          <!-- 填写个人信息 -->
+          <h3>填写个人信息</h3>
+          <!-- 用户名 -->
+          <p>
+            <label>
+              用户名:
+              <input type="text" name="username" value="" />
+            </label>
+          </p>
+          <!-- 密码 -->
+          <p>
+            <label>
+              密码:
+              <input type="password" name="password" value="" />
+            </label>
+          </p>
+          <!-- 性别 -->
+          性别:
+          <label> <input type="radio" name="gender" value="男" />男 </label>
+          <label> <input type="radio" name="gender" value="女" />女 </label>
+          <!-- 住址 -->
+          <p>
+            请选择住址
+            <select name="address">
+              <option value="东城区">东城区</option>
+              <option value="海淀区">海淀区</option>
+              <option value="顺义区">顺义区</option>
+              <option value="昌平区">昌平区</option>
+            </select>
+          </p>
+          <!-- 提交按钮 -->
+          <p><button>提交</button></p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

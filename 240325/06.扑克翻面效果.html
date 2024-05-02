@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>扑克翻面</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        width: 200px;
+        height: 300px;
+        margin: 200px auto;
+        /* background-color: antiquewhite; */
+        position: relative;
+
+        
+      }
+      .box .box1 {
+        width: 214px;
+        height: 300px;
+        font-size: 50px;
+        line-height: 300px;
+        text-align: center;
+        background:url(./images/back.jpg) 0 0 no-repeat;
+        background-size: cover;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+      .box_inner {
+        backface-visibility: hidden;
+        transition: all 0.5s linear;
+      }
+      .box:hover .box_inner {
+        transform: rotateY(180deg);
+      }
+      .box .box2 {
+        width: 214px;
+        height: 300px;
+        font-size: 50px;
+        line-height: 300px;
+        text-align: center;
+        background:url(./images/joker.jpg) 0 0 no-repeat;
+        background-size: cover;
+
+        position: absolute;
+        top: 0px;
+        left: 0;
+        z-index: 1;
+
+        transform: rotateY(-180deg);
+      }
+      /* .box:hover .box2 {
+        transform: rotateY(0deg);
+        z-index: auto;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="box_inner">
+        <div class="box1"></div>
+        <div class="box2"></div>
+      </div>
+    </div>
+  </body>
+</html>

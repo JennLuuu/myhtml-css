@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>相邻兄弟选择器</title>
+    <style>
+      /* 
+            +相邻兄弟选择器只能选择到紧挨着的下铺兄弟,下铺若没有人,则该设置无效
+            +如何给并列一排的块元素设置除第一个元素外,其余的都有左边距
+              -用.test div + div { margin-left: 25px; }
+              -父元素.test,的后代,中所有的div,的相邻兄弟,设置左边距(除第一个div外,其他的div都有被上一个兄弟选中的机会)
+            */
+      .listItem2 + li {
+        background: gold;
+      }
+
+      .test {
+        width: 1000px;
+        height: 200px;
+        border: 1px;
+        background-color: antiquewhite;
+      }
+      .test div {
+        background-color: pink;
+        width: 180px;
+        height: 100px;
+
+        float: left;
+      }
+      .test div + div {
+        margin-left: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li>列表</li>
+        <li class="listItem2">列表</li>
+        <li>列表</li>
+        <li>列表</li>
+        <li>列表</li>
+      </ul>
+    </div>
+
+    <!-- 除首位外,都有左边距 -->
+    <div class="test">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

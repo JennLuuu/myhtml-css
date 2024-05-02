@@ -1,0 +1,43 @@
+<!--
+ * @Author: JennLuuu 1129694837@qq.com
+ * @Date: 2024-03-13 18:52:45
+ * @LastEditors: JennLuuu 1129694837@qq.com
+ * @LastEditTime: 2024-03-13 18:54:24
+ * @FilePath: \MyCode\240313\03.子代选择器.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>后代选择器</title>
+        <style>
+            /* 
+            -子代是指儿子
+            */
+            li > p {
+                background: salmon;
+            }
+            div > p {
+                background-color: darkcyan;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li>列表</li>
+                <li>
+                    列表
+                    <p>测试标签</p>
+                </li>
+                <li>列表</li>
+                <li>列表</li>
+                <li>列表</li>
+                <li>列表</li>
+            </ul>
+        </div>
+    </body>
+</html>

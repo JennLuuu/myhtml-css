@@ -1,0 +1,41 @@
+<!--
+ * @Author: JennLuuu 1129694837@qq.com
+ * @Date: 2024-03-13 18:14:00
+ * @LastEditors: JennLuuu 1129694837@qq.com
+ * @LastEditTime: 2024-03-13 18:46:46
+ * @FilePath: \MyCode\240313\01.基础选择器.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>基础选择器优先级的排序</title>
+        <style>
+            .content {
+                background: red;
+            }
+            #content{
+                background: rgb(150, 200, 130);
+            }
+            p {
+                background: skyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <!-- <p class="content" id="content" style="background: rgb(192, 162, 209);">测试优先级</p>  -->
+            <p class="content" id="content" >测试优先级</p> 
+        </div>
+    </body>
+</html>
+
+<!-- 
+    行内样式大于class
+    行内样式大于id
+    id大于class
+
+-->

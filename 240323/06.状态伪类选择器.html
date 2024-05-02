@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>状态伪类选择器</title>
+        <style>
+            form p input:disabled {
+                background-color: aquamarine;
+            }
+            form p input:enabled {
+                background-color: rgb(6, 101, 70);
+            }
+            form p input:checked {
+                border: 1px solid red;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form action="####">
+            <p>
+                1:
+                <input type="text" disabled>
+            </p>
+            <p>
+                2:
+                <input type="text">
+            </p>
+            <p>
+                3:
+                <input type="text">
+            </p>
+            <p>
+                4:
+                <input type="radio" name="gender">男
+                <input type="radio" name="gender">女
+            </p>
+            <p>
+                5:
+                <input type="checkbox" name="city" checked>北京
+                <input type="checkbox" name="city">上海
+                <input type="checkbox" name="city">深圳
+            </p>
+        </form>
+    </body>
+</html>

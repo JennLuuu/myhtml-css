@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>群组选择器</title>
+        <!-- 
+            +群组选择器:想给多个元素设置同样的样式,可以使用群组选择器,将多个元素同时选择,中间用逗号隔开,然后一起设置样式
+            +若其中有元素想设置别的样式,需单独设置
+         -->
+        <style>
+            .test,
+            .a,
+            ul li {
+                background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>test</p>
+            <p>test</p>
+            <p class="test">test</p>
+            <p>test</p>
+            <div>hhhh</div>
+            <div>hhhh</div>
+            <div class="a">hhhh</div>
+            <div>hhhh</div>
+            <div>hhhh</div>
+            <ul>
+                <li>123</li>
+                <li>123</li>
+                <li>123</li>
+                <li>123</li>
+            </ul>
+        </div>
+    </body>
+</html>

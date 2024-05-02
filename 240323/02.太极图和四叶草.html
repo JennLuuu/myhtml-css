@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>太极图和四叶草</title>
+    <style>
+      @keyframes rotate {
+        from{
+          transform: rotate(0);
+        }
+        to{
+          transform: rotate(360deg);
+        }
+      }
+      /* 太极图部分 */
+      .big {
+        width: 500px;
+        height: 500px;
+        background-color: rgb(230, 230, 230);
+        margin: 0 auto;
+      }
+      .box {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+        border-left: 200px solid black;
+        box-sizing: border-box;
+        border-right: 200px solid #fff;
+        border-radius: 50%;
+        position: relative;
+        top: 45px;
+      }
+      .box:hover {
+        /* 旋转 */
+        animation: rotate 1s linear infinite;
+      }
+      .box .black {
+        box-sizing: border-box;
+        width: 200px;
+        height: 200px;
+        border: 100px solid #000;
+        border-radius: 50%;
+
+        position: relative;
+        left: -100px;
+      }
+      .box .black .little_white {
+        width: 30px;
+        height: 30px;
+        box-sizing: border-box;
+        border: 15px solid #fff;
+        border-radius: 50%;
+
+        position: absolute;
+        top: -16px;
+        left: -16px;
+      }
+      .box .white {
+        box-sizing: border-box;
+        width: 200px;
+        height: 200px;
+        border: 100px solid #fff;
+        border-radius: 50%;
+
+        position: relative;
+        left: -100px;
+      }
+      .box .white .little_black {
+        width: 30px;
+        height: 30px;
+        box-sizing: border-box;
+        border: 15px solid #000;
+        border-radius: 50%;
+
+        position: absolute;
+        top: -16px;
+        left: -16px;
+      }
+
+      /* 四叶草部分 */
+      .big2 {
+        width: 210px;
+        height: 210px;
+        margin: 100px auto;
+
+        /* 开启BFC */
+        overflow: hidden;
+      }
+      .big2:hover {
+        animation: rotate 1s linear infinite;
+      }
+      .big2_inner {
+        width: 220px;
+        height: 210px;
+        margin-left: -10px;
+      }
+      .box1,
+      .box2,
+      .box3,
+      .box4 {
+        width: 100px;
+        height: 100px;
+        box-sizing: border-box;
+        border: 1px solid #000;
+        background-color: pink;
+        float: left;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+      .box1,
+      .box4 {
+        border-radius: 0 67%;
+      }
+      .box2,
+      .box3 {
+        border-radius: 67% 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 太极图部分 -->
+    <div class="big">
+      <div class="box">
+        <div class="black">
+          <div class="little_white"></div>
+        </div>
+        <div class="white">
+          <div class="little_black"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 四叶草部分 -->
+    <div class="big2">
+      <div class="big2_inner">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+      </div>
+    </div>
+  </body>
+</html>

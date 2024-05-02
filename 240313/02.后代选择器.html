@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>后代选择器</title>
+        <style>
+            /* 
+            -后代是指子孙后代,不是只有儿子
+            -同等优先级标签,对属性的设置出现冲突,后写的样式覆盖先写的样式
+            */
+            li p {
+                background: salmon;
+            }
+            div p {
+                background-color: darkcyan;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li>列表</li>
+                <li>
+                    列表
+                    <p>测试标签</p>
+                </li>
+                <li>列表</li>
+                <li>列表</li>
+                <li>列表</li>
+                <li>列表</li>
+            </ul>
+        </div>
+    </body>
+</html>

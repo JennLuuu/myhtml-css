@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>图片间隙的产生原因及解决方式</title>
+        <style>
+            .con1 {
+                width: 600px;
+                height: auto;
+                background-color: pink;
+                /* line-height: 0px; */
+                /* font-size: 0; */
+            }
+            .con1 img {
+                width: 200px;
+                height: 150px;
+                /* vertical-align: bottom; */
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 图片间隙产生的原因:图片默认的对其方式是元素下沿与基线对齐,与页面的基线对齐后,图片下方就会有基线和底线之间的缝隙
+        解决方法:
+        法一:改变对齐方式,不要基线对齐;
+        法二:给父元素设置行高为0;
+        法三:给父元素设置字号为0;
+        法四:让img变成块元素. -->
+        <div class="con1">
+            <img src="./images/gugong3.jpg" alt="">
+            
+        </div>
+    </body>
+</html>

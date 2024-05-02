@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>通用兄弟选择器</title>
+        <!-- 
+            他自己下面所有的兄弟都会选中
+         -->
+        <style>
+            .test ~ li {
+                background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li>test</li>
+                <li>test</li>
+                <li class="test">test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+            </ul>
+        </div>
+    </body>
+</html>

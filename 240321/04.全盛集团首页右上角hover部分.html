@@ -1,0 +1,126 @@
+<!--
+ * @Author: JennLuuu 1129694837@qq.com
+ * @Date: 2024-03-21 23:00:22
+ * @LastEditors: JennLuuu 1129694837@qq.com
+ * @LastEditTime: 2024-03-22 20:27:01
+ * @FilePath: \MyCode\240321\04.全盛集团hover部分.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>全盛集团hover部分</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <style>
+      .clearFix::after{
+      content: "";
+      display:block;
+      clear: both;
+      height: 0;
+      }
+      .box {
+        width: 681px;
+      }
+      .box ul {
+        float: right;
+        overflow: hidden;
+      }
+      .box ul li {
+        width: 84px;
+        height: 84px;
+        font-size: 10px;
+        color: #bababb;
+        background-color: #ccc;
+        float: left;
+      }
+      
+      .box ul li + li {
+        border-left: 1px solid #fff;
+      }
+      .box ul li i {
+        display: block;
+        width: 45px;
+        height: 35px;
+        background: url(./images/i-nav.png) 0 0 no-repeat;
+        margin: 21px 16px 0 20px;
+      }
+      .box ul li:nth-child(1) i {
+        background: url(./images/i-nav.png) 3px 0 no-repeat;
+      }
+      .box ul li:nth-child(2) i {
+        background: url(./images/i-nav.png) -61px 0 no-repeat;
+      }
+      .box ul li:nth-child(3) i {
+        background: url(./images/i-nav.png) -131px 0 no-repeat;
+      }
+      .box ul li:nth-child(4) i {
+        background: url(./images/i-nav.png) -208px 0 no-repeat;
+      }
+      .box ul li:nth-child(5) i {
+        background: url(./images/i-nav.png) -280px 0 no-repeat;
+      }
+      .box ul li:nth-child(6) i {
+        background: url(./images/i-nav.png) -353px 0 no-repeat;
+      }
+      .box ul li:nth-child(7) i {
+        background: url(./images/i-nav.png) -426px 0 no-repeat;
+      }
+      .box ul li:nth-child(8) i {
+        background: url(./images/i-nav.png) -499px -1px no-repeat;
+      }
+
+      .box ul li:hover {
+        background-color: #c2191f;
+        color: #fff;
+      }
+      .box ul li i:hover {
+        background-position-y: -55px;
+      }
+      
+      .box ul li p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box clearFix">
+      <ul class="list">
+        <li>
+          <i></i>
+          <p>集团首页</p>
+        </li>
+        <li>
+          <i></i>
+          <p>战略规划</p>
+        </li>
+        <li>
+          <i></i>
+          <p>集团业务</p>
+        </li>
+        <li>
+          <i></i>
+          <p>合作中心</p>
+        </li>
+        <li>
+          <i></i>
+          <p>全盛动态</p>
+        </li>
+        <li>
+          <i></i>
+          <p>相关链接</p>
+        </li>
+        <li>
+          <i></i>
+          <p>在线客服</p>
+        </li>
+        <li>
+          <i></i>
+          <p>站内搜索</p>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>圆角练习</title>
+        <style>
+            .outer {
+                width: 500px;
+            }
+            .outer p {
+                background-color: rgb(214, 210, 193);
+                text-align: center;
+                font-size: 30px;
+                font-weight: 900;
+                float: left;
+                margin-left: 20px;
+            }
+            .outer p:nth-child(1) {
+                width: 167px;
+                height: 167px;
+                border-radius: 20px;
+                line-height: 167px;
+            }
+            .outer p:nth-child(2) {
+                width: 167px;
+                height: 167px;
+                border-radius: 50%;
+                line-height: 167px;
+            }
+            .outer p:nth-child(3) {
+                width: 167px;
+                height: 167px;
+                border-radius: 90px 0 90px;
+                line-height: 167px;
+            }
+            .outer p:nth-child(4) {
+                width: 167px;
+                height: 167px;
+                border-radius: 50% 0 50% 50%;
+                line-height: 167px;
+            }
+            .outer p:nth-child(5) {
+                width: 167px;
+                height: 167px;
+                border-radius: 0 0 0 91px;
+                line-height: 167px;
+            }
+            .outer p:nth-child(6) {
+                width: 328px;
+                height: 167px;
+                border-radius: 50% 50% 50% 50%;
+                line-height: 167px;
+            }
+            .outer p.G {
+                width: 167px;
+                height: 167px;
+                border-radius: 50% 50% 50% 50%;
+                line-height: 167px;
+                position: relative;
+            }
+            .outer p.H {
+                width: 167px;
+                height: 167px;
+                border-radius: 20px 20px 20px 20px /20px 20px 20px 20px ;
+                line-height: 167px;
+                position: relative;
+                background-color: transparent;
+            }
+            .sanjiao {
+                display: block;
+                width: 0px;
+                height: 0px;
+                border: 84px solid pink;
+                border-top-color: transparent;
+                border-left-color: transparent;
+                border-bottom-color: transparent;
+                border-right-color: #fff;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+            .sanjiao1 {
+                display: block;
+                width: 0px;
+                height: 0px;
+                border: 84px solid pink;
+                border-top-color: red;
+                border-left-color: transparent;
+                border-bottom-color: yellow;
+                border-right-color: transparent;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                border-radius: 50% 50% 50% 50% /34px 34px 34px 34px ;
+            }
+
+            .outer .grn1 {
+                width: 150px;
+                height: 200px;
+                box-sizing: border-box;
+                border-right: 150px solid lightgreen;
+                border-radius: 0 150px 150px 0/0 100px 100px 0;
+            }
+            .outer .grn2 {
+                width: 200px;
+                height: 200px;
+                box-sizing: border-box;
+                border: 100px solid lightgreen;
+                border-radius: 0 100% 0 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <p>A</p>
+            <p>B</p>
+            <p>C</p>
+            <p>D</p>
+            <p>E</p>
+            <p>F</p>
+
+            <p class="G">
+                G
+                <span class="sanjiao"></span>
+            </p>
+            <p class="H">
+                H
+                <span ></span>
+                <span class="sanjiao1"></span>
+            </p>
+            <p class="grn1"></p>
+            <p class="grn2"></p>
+        </div>
+    </body>
+</html>

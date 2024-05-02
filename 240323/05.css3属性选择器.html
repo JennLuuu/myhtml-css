@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>css3属性选择器</title>
+        <link rel="stylesheet" href="../reset.css">
+        <style>
+            form input[name] {
+                background-color: antiquewhite;
+            }
+            form input[name=password] {
+                background-color: beige;
+                height: 80px;
+            }
+            form input[name^="p"] {
+                background-color: aquamarine;
+            }
+            form input[name$="s"] {
+                width: 200px;
+            }
+            form input[name*="a"] {
+                background-color: blueviolet;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form action="####">
+            <input type="text" name="uesr"><br>
+            <input type="password" name="password"><br>
+            <input type="text" name="urls"><br>
+            <input type="password" name="page"><br>
+        </form>
+    </body>
+</html>

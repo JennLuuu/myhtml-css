@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>轮播图练习</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            .clearFix::after{
+            content: "";
+            display:block;
+            clear: both;
+            height: 0;
+            }
+            .outer {
+                width: 600px;
+                height: 400px;
+                margin: 0 auto;
+                position: relative;
+            }
+            .inner {
+                overflow: auto;
+            }
+            .box {
+                width: 3200px;
+            }
+            .inner .box img {
+                width: 600px;
+                height: 400px;
+                float: left;
+            }
+            .left,.right {
+                width: 50px;
+                height: 50px;
+                background-color: brown;
+                color: #fff;
+                border-radius: 50%;
+                font-size: 45px;
+                line-height: 50px;
+                text-align: center;
+
+                position: absolute;
+            }
+            .left {
+                left: 0;
+                top: 50%;
+                margin-top: -25px;
+            }
+            .right {
+                right: 0;
+                top: 50%;
+                margin-top: -25px;
+            }
+            .list {
+                overflow: hidden;
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                margin-left: -37px;
+            }
+            .list li {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                float: left;
+                background-color: rgb(253, 24, 135);
+                margin-right: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="outer">
+                <div class="inner">
+                    <div class="box clearFix">
+                        <img src="./images/list_03.jpg" alt="">
+                        <img src="./images/list_05.jpg" alt="">
+                        <img src="./images/list_07.jpg" alt="">
+                        <img src="./images/list_12.jpg" alt="">
+                        <img src="./images/list_13.jpg" alt="">
+                    </div>
+    
+                    <!-- 左右按键 -->
+                    <p class="left">&gt;</p>
+                    <p class="right">&lt;</p>
+
+                    <!-- 小点 -->
+                    <ul class="list">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

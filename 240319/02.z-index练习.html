@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>z-index练习</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            .outer {
+
+            }
+            .inner {
+                width: 800px;
+                height: 800px;
+                margin: 0 auto;
+                background-color: rgb(170, 223, 223);
+                overflow: hidden;
+            }
+            .list {
+                height: 500px;
+            }
+            .list li {
+                float: left;
+                margin: 40px;
+                position: relative;
+            }
+            .list li div {
+                background-color: pink;
+                width: 200px;
+                height: 150px;
+                position: relative;
+                z-index: 1;
+            }
+            .list li p {
+                background-color: aquamarine;
+                width: 200px;
+                height: 60px;
+                position: absolute;
+                left: 29px;
+                bottom: -29px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner">
+                <ul class="list">
+                    <li>
+                        <div></div>
+                        <p></p>
+                    </li>
+                    <li>
+                        <div></div>
+                        <p></p>
+                    </li>
+                    <li>
+                        <div></div>
+                        <p></p>
+                    </li>
+                    <li>
+                        <div></div>
+                        <p></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

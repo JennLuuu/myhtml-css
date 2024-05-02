@@ -1,0 +1,58 @@
+/* 顶部导航栏 */
+.topNav {
+    background-color: #e3e4e5;
+    color: #999;
+}
+.topNav p {
+    width: 250px;
+}
+.navRight li {
+    float: right;
+}
+.navRight {
+    width: 1000px;
+}
+
+/* 头部 */
+/* logo样式 */
+.head {
+    width: 990px;
+    height: 140px;
+    border-bottom: 1px solid #ddd;
+}
+.head h1 img {
+    width: 190px;
+    height: 120px;
+}
+/* 搜索框样式 */
+.searchInput {
+    border: 2px solid #e2231a;
+    width: 490px;
+    height: 35px;
+}
+.searchInput button {
+    background-color: #e1251b;
+    width: 58px;
+    height: 32px;
+}
+/* 购物车样式 */
+.shopCar {
+    border: 1px solid rgb(171, 164, 164);
+    width: 132px;
+    height: 35px;
+    color: rgb(238, 36, 36);
+}
+.shopCar a {
+    color: rgb(238, 36, 36);
+}
+
+/* 中间部分 */
+.leftNav a {
+    color: #636363;
+}
+.leftNav {
+    position: relative;
+}
+.leftNav li {
+    position: absolute;
+}

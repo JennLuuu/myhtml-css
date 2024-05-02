@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>rem单位</title>
+        <style>
+            html {
+                font-size: 10px;
+            }
+            .con p:nth-child(1) {
+                font-size: 2rem;
+                width: 60rem;
+                height: 25rem;
+                background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- rem单位,是参考html根元素(html元素的字号大小计算的)不受其他任何因素影响 -->
+        
+        <div class="con">
+            <p>你看这是什么,我是这么大</p>
+            <p>你看这是什么,我是这么大</p>
+            <p>你看这是什么,我是这么大</p>
+            <p>你看这是什么,我是这么大</p>
+        </div>
+    </body>
+</html>

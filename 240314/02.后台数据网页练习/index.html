@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>网站后台管理系统</title>
+        <style>
+            .b {
+                position: relative;
+                width: auto;
+                height: auto;
+            }
+            /* 头部样式 */
+            .head {
+                background-color: rgb(107, 104, 104);
+                color: #fff;
+            }
+            /* 时间栏样式 */
+            /* .time {
+                position: relative;
+            }
+            .time p {
+                position: absolute;
+                right: 10px;
+            } */
+            /* body样式 */
+            .body {
+                position: relative;
+                height: 1000px;
+            }
+            .bodyLeft {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            .bodyRight {
+                position: absolute;
+                right: 5px;
+                top: 5px;
+            }
+            /* 表格样式 */
+            table {
+                width: 1000px;
+                height: 800px;
+            }
+            table , tr , th , td {
+                border: 1px solid gray;
+                border-collapse: collapse;
+            }
+            table th {
+                background-color: rgb(245, 245, 245);
+                height: 40px;
+            }
+
+            /* 底部样式 */
+            .bottom {
+                background-color: rgb(71, 71, 71);
+                color: #fff;
+                height: 40px;
+                width: 100%;
+                position:absolute;
+                bottom: 0;
+            }
+            .bottom p {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="b">
+            <!-- 头部 -->
+            <div class="head">
+                <h1>网站后台管理系统 <sup>V1.3</sup></h1>
+                <ul>
+                    <li>常规管理</li>
+                    <li>用户管理</li>
+                    <li>文章管理</li>
+                    <li>产品管理</li>
+                    <li>留言管理</li>
+                    <li>模板管理</li>
+                    <li>数据管理</li>
+                    <li>系统管理</li>
+                </ul>
+            </div>
+            <!-- 时间栏 -->
+            <div class="time">
+                <span>现在时间:xxxx年xx月xx日 星期x 17:48:51</span>
+                <p>
+                    <button>网站首页</button>
+                    <button>安全退出</button>
+                </p>
+            </div>
+            <!-- 主体 -->
+            <div class="body">
+                <!-- 左边 -->
+                <div class="bodyLeft">
+                    <!-- 上边管理项 -->
+                    <ul>
+                        <li><a href="">网站运行状态</a></li>
+                        <li><a href="">网站公告设置</a></li>
+                        <li><a href="">网站广告管理</a></li>
+                        <li><a href="">友情链接管理</a></li>
+                    </ul>
+                    <!-- 下边信息框 -->
+                    <p>技术支持</p>
+                    <p>Tel : 000-000000000 <br> 111-111111111</p>
+                    <p>QQ : 99999999999 <br> 88888888888</p>
+                    <p>E-mail : skjg@example.com <br> skjg@example.com</p>
+                </div>
+                <!-- 右边表格 -->
+                <div class="bodyRight">
+                    <table class=".table">
+                        <thead>
+                            <tr >
+                                <th>序号</th>
+                                <th>新闻标题</th>
+                                <th>发布时间</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--底部信息-->
+                    <div>
+                        <ul>
+                            <li><a href="">首页</a></li>
+                            <li><a href="">上一页</a></li>
+                            <li><a href="">下一页</a></li>
+                            <li><a href="">尾页</a></li>
+                        </ul>
+                        <p>
+                            共有132条信息,每页20条,当前1/7页
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 底部 -->
+            <div class="bottom">
+                <p>
+                    POWERED BY xxxxxx 2003-2008 xxxxxxxxx All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

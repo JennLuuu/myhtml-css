@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>多行文本垂直居中</title>
+        <style>
+            .outer p {
+                width: 200px;
+                height: 200px;
+                border: 1px solid #000;
+                
+                /* css2方式:表格 */
+                display: table-cell;
+                vertical-align: middle;
+            }
+            .outer1 p {
+                width: 200px;
+                height: 200px;
+                border: 1px solid #000;
+
+                /* css3方式:flex */
+                display: flex;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <p>今天他和他的狗子一起去爬山去了,结果遇到了下雨,然后遇到了另一个狗子</p>
+        </div>
+        <div class="outer1">
+            <p>今天他和他的狗子一起去爬山去了,结果遇到了下雨,然后遇到了另一个狗子</p>
+        </div>
+    </body>
+</html>

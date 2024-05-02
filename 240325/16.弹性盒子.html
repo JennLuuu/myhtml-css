@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title></title>
+    <style>
+      .outer {
+        width: 800px;
+        height: 300px;
+        border: 1px solid #000;
+        margin: 50px auto;
+
+        /* 开启弹性盒 */
+        display: flex;
+
+        /* 改变主轴方向 */
+        flex-direction: column;
+
+        /* 主轴上空余空间分布 */
+        justify-content: space-evenly;
+
+        /* 侧轴富余空间分配 */
+        align-items: center;
+      }
+
+      .box {
+        width: 100px;
+      }
+      .box:nth-child(1) {
+        background-color: yellowgreen;
+      }
+      .box:nth-child(2) {
+        background-color: rgb(50, 174, 205);
+      }
+      .box:nth-child(3) {
+        background-color: rgb(205, 50, 50);
+      }
+      .box:nth-child(4) {
+        background-color: rgb(60, 50, 205);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="box">box1</div>
+      <div class="box">box2</div>
+      <div class="box">box3</div>
+      <span class="box">box4</span>
+      <img src="../images/01.png" alt="" />
+    </div>
+  </body>
+</html>

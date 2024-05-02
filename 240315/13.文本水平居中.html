@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>文本水平居中</title>
+        <style>
+            .con {
+                width: 600px;
+                height: 400px;
+                background-color: pink;
+            }
+            .con p {
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 文本的水平方向的对齐方式
+        center left right justify 
+        目前仅适用于块元素,如果写在行元素身上,意为让行元素内的文本在行元素内部居中对齐,可行元素的占地面积是由文本撑开的,本来就在中间;
+        不能让容器内的块元素居中,但块会继承这个居中的条件,继承的条件就会让内部块中的文本进行对齐,要想改变,直接给内部文本单独设置对齐要求覆盖继承的条件即可-->
+        <div class="con">
+            <p>
+                本人10年来一方面日以继夜研究CSS相关技术，另一方面一直奋斗在前端一线不断实践，互相促进，成长了很多。本书就是对这些研究与实践积累的精华知识的系统总结。
+            </p>
+        </div>
+    </body>
+</html>

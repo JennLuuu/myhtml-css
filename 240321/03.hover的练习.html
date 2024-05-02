@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>hover的练习</title>
+        <link rel="stylesheet" href="../reset.css">
+        <style>
+
+            .box {
+                width: 150px;
+            }
+            .box:hover ul {
+                display: block;
+            }
+            .box:hover h3 {
+                color: #fff;
+                background-color: rgb(122, 31, 31);
+            }
+            .box h3 {
+                width: 150px;
+                height: 40px;
+                background-color: pink ;
+                line-height: 40px;
+                text-align: center;
+            }
+            .box ul {
+                background-color: antiquewhite;
+                width: 150px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <!-- 鼠标移入悬浮的时候展示列表,移出的时候列表消失 -->
+            <h3>新闻列表</h3>
+            <ul class="list">
+                <li>展示展示展示展示</li>
+                <li>展示展示展示展示</li>
+                <li>展示展示展示展示</li>
+                <li>展示展示展示展示</li>
+                <li>展示展示展示展示</li>
+                <li>展示展示展示展示</li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>a标签的使用</title>
+    </head>
+    <body>
+        <div>
+            <!-- 两个a标签所在的块 -->
+            <div style="background-color: bisque;height: 1500px;">
+                <!-- a标签跳转div -->
+                <a href="#toThis">在这里跳转到一个块中</a>
+
+                <!-- a标签跳转到另一个页面 -->
+                <a href="./00.a标签要跳转的页面.html" target="_blank">你猜会跳到哪里</a>
+            </div>
+            
+            <!-- a标签要跳转的div -->
+            <div id="toThis" style="background-color: aquamarine;width: 1000px;height: 500px;">
+                a标签要跳转到这个div中
+            </div>
+
+            <!-- a标签跳转到页面头部 -->
+            <div>
+                <a href="#">返回顶部</a>
+            </div>
+        </div>
+    </body>
+</html>

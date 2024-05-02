@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>hi菱形</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .clearFix::after{
+      content: "";
+      display:block;
+      clear: both;
+      height: 0;
+      }
+      .outer {
+        width: 600px;
+        height: 200px;
+        background-color: rgb(228, 246, 254);
+        margin: 200px auto;
+        transform: skewX(-10deg);
+        border-radius: 5px;
+      }
+      .outer:hover {
+        box-shadow: 10px 10px 2px 0px rgb(230, 212, 230);
+        transition: all 0.5s linear;
+        /* transform: translateY(-20deg); */
+      }
+      
+      .inner {
+        width: 600px;
+        height: 180px;
+        background-color: transparent;
+        padding-top: 20px;
+        position: relative;
+        float: left;
+        transform: skewX(10deg);
+
+        overflow: hidden;
+      }
+      .outer:hover .inner {
+        transform: translateY(-20deg);
+      }
+      .inner .img {
+        width: 250px;
+        height: 200px;
+        float: left;
+        position: relative;
+        margin-left: 70px;
+      }
+      .inner .img img:nth-child(1) {
+        width: 200px;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+
+        transition: all 0.5s linear 0.4s;
+      }
+      .outer:hover .img img:nth-child(1) {
+        left: -16px;
+        
+      }
+      .outer:hover .img img:nth-child(2) {
+        left: -20px;
+        
+      }
+      .inner .img img:nth-child(2) {
+        width: 200px;
+        position: absolute;
+        bottom: 0;
+        left: -36px;
+
+        transition: all 0.5s linear 0.4s;
+      }
+      .inner p {
+        width: 170px;
+        height: 180px;
+        line-height: 180px;
+        padding-right: 80px;
+        color: #000;
+        font-size: 30px;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 用于扭曲做菱形 -->
+    <div class="outer clearFix">
+      <!-- 用于放内部图片和文字 -->
+      <div class="inner">
+        <div class="img">
+          <img src="./images/b-l.png" alt="手机背面图" />
+          <img src="./images/b-r.png" alt="手机正面图" />
+        </div>
+        <p class="title">更换电池</p>
+      </div>
+    </div>
+  </body>
+</html>

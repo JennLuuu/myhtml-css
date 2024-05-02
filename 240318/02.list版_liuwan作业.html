@@ -1,0 +1,200 @@
+<!--
+ * @Author: JennLuuu 1129694837@qq.com
+ * @Date: 2024-03-18 14:00:44
+ * @LastEditors: JennLuuu 1129694837@qq.com
+ * @LastEditTime: 2024-03-18 20:52:00
+ * @FilePath: \MyCode\240318\02.liuwan作业.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>遛弯作业</title>
+    <style>
+        /* 清除默认样式 */
+        * {
+            margin: 0;
+            padding:0;
+        }
+      /* 头部外层容器,用来写下边框样式 */
+      .head_outer {
+        height: 113px;
+        border-bottom: 4px solid #176fbb;
+      }
+      .head_inner {
+        width: 1000px;
+        height: 113px;
+        background-color: aquamarine;
+        margin: 0 auto;
+      }
+      /* 清浮动 */
+      .clear_float::after {
+        content:"";
+        display: block;
+        clear: both;
+        height: 0;
+      }
+      /* 导航栏 */
+      .nav {
+        width: 1000px;
+        height: 53px;
+        margin: 0 auto;
+        line-height: 53px;
+        font-size: 14px;
+        color: #000;
+      }
+      .nav a {
+        color: #000;
+        text-decoration: none;
+      }
+      /* 大图 */
+      .bigimage {
+        height: 350px;
+        background: url(./images/big_02.jpg) center center no-repeat;
+      }
+      /* 伴手礼部分 */
+      .banshouli {
+        width: 1000px;
+        margin: 0 auto;
+      }
+      .banshouli_top {
+        height: 98px;
+        color: #cc0000;
+        font-size: 30px;
+        line-height: 98px;
+        text-align: center;
+      }
+      .banshouli_top span:nth-child(1) {
+        display: inline-block;
+        width: 33px;
+        height: 38px;
+        background: url(./images/liwu_03.png) center center;
+        margin: -5px 7px;
+      }
+
+      /* 伴手礼礼物详情 */
+      .banshouli_content {
+        overflow: hidden;
+        height: 472px;
+      }
+      .banshouli_content_inner div {
+        width: 314px;
+        height: 221px;
+        margin: 0 30px 30px 0;
+        float: left;
+      }
+      .banshouli_content_inner {
+        width: 1034px;
+        height: 502px;
+      }
+      .banshouli_content .gift1 {
+        background: url(./images/content_03.jpg);
+      }
+      .banshouli_content .gift2 {
+        background: url(./images/content_05.jpg);
+      }
+      .banshouli_content .gift3 {
+        background: url(./images/content_06.jpg);
+      }
+      .banshouli_content .gift4 {
+        background: url(./images/content_07.jpg);
+      }
+      .banshouli_content .gift5 {
+        background: url(./images/content_08.jpg);
+      }
+      .banshouli_content .gift6 {
+        background: url(./images/content_12.jpg);
+      }
+
+      /* 伴手礼页码 */
+      .banshouli p {
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+      }
+      .banshouli a {
+        color: #000;
+        text-decoration: none;
+      }
+
+      /* 页尾 */
+      .bottom {
+        height: 236px;
+        background-color: #023c4d;
+      }
+      .bottom .bottom_top {
+        height: 178px;
+      }
+      .bottom .bottom_btm {
+        color: #fff;
+        text-align: center;
+        border-top: 1px solid #fff;
+        height: 57px;
+        line-height: 57px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- 头部 -->
+      <div class="head_outer">
+        <div class="head_inner">
+          <!-- 负margin版本 -->
+        </div>
+      </div>
+      <!-- 导航栏 -->
+      <div class="nav">
+        <a href="javascript:;">首页</a>
+        &gt;
+        <span>伴手礼</span>
+      </div>
+      <!-- 大图部分 -->
+      <div class="bigimage"></div>
+      <!-- 伴手礼部分 -->
+      <div class="banshouli ">
+        <!-- 伴手礼文字部分 -->
+        <div class="banshouli_top">
+          <span></span>
+          <span>伴手礼</span>
+        </div>
+        <!-- 伴手礼详情 -->
+        <div class="banshouli_content clear_float">
+          <div class="banshouli_content_inner">
+            <div class="gift1"></div>
+            <div class="gift2"></div>
+            <div class="gift3"></div>
+            <div class="gift4"></div>
+            <div class="gift5"></div>
+            <div class="gift6"></div>
+          </div>
+        </div>
+        <!-- 伴手礼详情页码 -->
+        <p>
+            <a href="javascript:;">上一页</a>
+            <a href="javascript:;">1</a>
+            <a href="javascript:;">...</a>
+            <a href="javascript:;">12</a>
+            <a href="javascript:;">13</a>
+            <a href="javascript:;">14</a>
+            <a href="javascript:;">...</a>
+            <a href="javascript:;">40</a>
+            <a href="javascript:;">下一页</a>
+        </p>
+      </div>
+      <!-- 底部 -->
+      <div class="bottom">
+        <!-- 上部分 -->
+        <div class="bottom_top">
+
+        </div>
+        <!-- 下部分 -->
+        <div class="bottom_btm">
+            <span>Copyright &copy; 2013-2014 www.6waner.cn All Right Reserved. 京ICP备11015236号</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

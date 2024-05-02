@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>盒子阴影</title>
+        <style>
+            .box p {
+                width: 200px;
+                height: 100px;
+                border-radius: 30px;
+            }
+            .box p:nth-child(1) {
+                background-color: antiquewhite;
+            }
+            .box p:nth-child(1):hover {
+                box-shadow: 13px 13px 15px 5px orchid;
+
+                transition: all 0.3s linear;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <p></p>
+        </div>
+    </body>
+</html>
